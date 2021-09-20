@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/username"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/textview1"
+            android:text="hehe"
+            android:textSize="20dp">
+
+        </TextView>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/vipLevel"
+        android:textSize="20dp"
+        android:layout_below="@id/username">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/vipLevle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/textview2"
+        android:layout_below="@id/username"
+        android:text="hehe"
+        android:textSize="20dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/identity_count"
+        android:textSize="20dp"
+        android:layout_below="@id/textview2">
+
+    </TextView>
+    <TextView
+        android:id="@+id/logout"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/logout"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/textview3"/>
+    <TextView
+        android:id="@+id/picturecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/textview1"
+        android:layout_below="@id/textview2"
+        android:text="hehe"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voucher_center"
+        android:layout_below="@id/logout"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        />
+    <ImageView
+        android:id="@+id/vip1"
+        android:layout_width="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vip1"
+        android:layout_below="@id/money"/>
+    <TextView
+        android:id="@+id/vip1_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/money"
+        android:layout_toRightOf="@id/vip1"
+        android:text="100张图片"
+        android:textSize="20dp"
+        />
+    <ImageView
+        android:id="@+id/vip2"
+        android:layout_width="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/vip2"
+        android:layout_below="@id/vip1"
+        />
+    <TextView
+        android:id="@+id/vip2_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/vip1"
+        android:layout_toRightOf="@id/vip1"
+        android:text="1000张图片"
+        android:textSize="20dp"
+        />
+    <ImageView
+        android:id="@+id/vip3"
+        android:layout_width="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp"
+        android:src="@drawable/vip3"
+        android:layout_below="@id/vip2"/>
+    <TextView
+        android:id="@+id/vip3_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/vip2"
+        android:layout_toRightOf="@id/vip1"
+        android:text="2000张图片"
+        android:textSize="20dp"
+        />
+
+
+
+</RelativeLayout>

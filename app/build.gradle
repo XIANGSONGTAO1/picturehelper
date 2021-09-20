@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.tao.picturehelper"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 7
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+//        ndk {
+//            abiFilters 'armeabi-v7a','arm64-v8a'
+//        }
+    }
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                // 此处指定生成的apk文件名
+                outputFileName = "KKPhoto.apk"
+            }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        pickFirst 'META-INF/*'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+        dexInProcess = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+//apply plugin: 'com.mob.00'
+//MobSDK {
+//    appKey "320af5037ddbb"
+//    appSecret "7adcb4e75bef28d2c97550460ab555e1"
+//    SMSSDK {}
+//}
+
+
+dependencies {
+    compile(name: 'alipaysdk-15.8.01.210112203525', ext: 'aar')
+
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile 'com.alibaba:fastjson:1.2.73'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    compile 'com.google.code.gson:gson:2.8.5'
+    // https://mvnrepository.com/artifact/org.xutils/xutils
+    compile 'org.xutils:xutils:3.8.12'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.jakewharton:butterknife:8.4.0'
+    implementation "com.jakewharton:butterknife:10.0.0"
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile 'mysql:mysql-connector-java:5.1.49'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile 'org.apache.commons:commons-lang3:3.11'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    compile 'pub.devrel:easypermissions:0.1.7'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
+// https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
+// https://mvnrepository.com/artifact/com.yungouos.pay/yungouos-pay-sdk
+// https://mvnrepository.com/artifact/cn.hutool/hutool-all
+    compile group: 'cn.hutool', name: 'hutool-all', version: '5.5.7'
+// https://mvnrepository.com/artifact/com.paypal.sdk/paypal-android-sdk
+//    compile group: 'com.paypal.sdk', name: 'paypal-android-sdk', version: '2.16.0'
+
+    compile 'com.paypal.sdk:rest-api-sdk:+'
+    implementation files('libs/aip-java-sdk-4.15.1.jar')
+    implementation files('libs/json-20160810.jar')
+//    implementation files('libs/slf4j-api-1.7.25.jar')
+//    implementation files('libs/slf4j-simple-1.7.25.jar')
+    implementation files('libs/ocr-sdk.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    // https://mvnrepository.com/artifact/com.github.chrisbanes/PhotoView
+    compile group: 'com.github.chrisbanes', name: 'PhotoView', version: '2.3.0'
+
+
+}

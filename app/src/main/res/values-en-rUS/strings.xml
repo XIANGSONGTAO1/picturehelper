@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">language</string>
+    <string name="app_name">kk photo</string>
+    <string name="flight_log_dialog_share_title">share</string>
+    <string name="state_load_error">fail</string>
+    <string name="state_loading">loading</string>
+    <string name="state_no_more">no more data</string>
+    <string name="chose_album">chose album</string>
+    <string name="login">login</string>
+    <string name="regist">regist account</string>
+    <string name="share">share</string>
+    <string name="read">read</string>
+    <string name="cancel">cancel</string>
+    <string name="start_identifying">Start identifying(The first recognition takes a little long time)</string>
+    <string name="is_identifying">Identifying, please wait</string>
+    <string name="search_keywords">Search keywords</string>
+    <string name="user_exist">User already exists</string>
+    <string name="username_or_password_wrong">Wrong user name or password</string>
+    <string name="clipboard">Copied to clipboard</string>
+    <string name="input_account">Input account number</string>
+    <string name="input_password">Input password</string>
+    <string name="primaryVip">primaryVip</string>
+    <string name="intermediateVip">intermediateVip</string>
+    <string name="seniorVip">seniorVip</string>
+    <string name="commonUser">Common User</string>
+    <string name="yuan">dollar</string>
+    <string name="pictures">pictures</string>
+    <string name="username">Username:</string>
+    <string name="vipLevel">VipLevel:</string>
+    <string name="identity_count">Identity count:</string>
+    <string name="logout">logout</string>
+    <string name="voucher_center">voucher center</string>
+    <string name="account">account</string>
+    <string name="password">password</string>
+    <string name="regist_submit">regist</string>
+    <string name="password_no_space">Username or Password can not contain space</string>
+    <string name="name_or_pass_not_null">Username or password not null</string>
+    <string name="login_success">Login Success</string>
+    <string name="login_fail">Login Fail</string>
+    <string name="alredy_login">You have logged in elsewhere. Please log out first</string>
+    <string name="click_error">click too much</string>
+
+</resources>

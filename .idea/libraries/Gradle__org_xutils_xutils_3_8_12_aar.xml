@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.xutils:xutils:3.8.12@aar">
+    <CLASSES>
+      <root url="jar://F:/mavenRepository/caches/transforms-2/files-2.1/a8a1d6c289d6e705fb5dd3bb6f2e1e3c/jetified-xutils-3.8.12/jars/classes.jar!/" />
+      <root url="file://F:/mavenRepository/caches/transforms-2/files-2.1/a8a1d6c289d6e705fb5dd3bb6f2e1e3c/jetified-xutils-3.8.12/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/mavenRepository/caches/modules-2/files-2.1/org.xutils/xutils/3.8.12/df676b8c8f9fc237e551cd4fc05b312038a29ad3/xutils-3.8.12-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/mavenRepository/caches/modules-2/files-2.1/org.xutils/xutils/3.8.12/2df44d07c3b1eeb65d64996a7fb28d2e35e04048/xutils-3.8.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

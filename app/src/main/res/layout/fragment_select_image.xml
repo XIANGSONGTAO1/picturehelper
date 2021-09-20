@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/search_lay"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <EditText-->
+<!--            android:id="@+id/search_key"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="请输入关键词"-->
+<!--            android:textSize="15dp"/>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/search_img"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:src="@mipmap/icon_search"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_alignParentRight="true"/>-->
+<!--    </RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:paddingTop="1dp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/size_4"
+            android:paddingTop="@dimen/size_4"
+            >
+
+            <ImageView
+                android:id="@+id/iv_title_select"
+                android:layout_width="@dimen/size_16"
+                android:layout_height="@dimen/size_16"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="@dimen/size_4"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_arrow_bottom"
+                />
+
+            <Button
+                android:id="@+id/btn_title_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="@dimen/size_128"
+                android:paddingBottom="@dimen/size_2"
+                android:paddingLeft="@dimen/size_4"
+                android:paddingRight="@dimen/size_20"
+                android:paddingTop="@dimen/size_2"
+                android:text="@string/chose_album"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18"
+                />
+
+        </FrameLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="1"
+        android:padding="1dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.paypal.sdk:rest-api-sdk:1.14.0@jar">
+    <CLASSES>
+      <root url="jar://F:/mavenRepository/caches/modules-2/files-2.1/com.paypal.sdk/rest-api-sdk/1.14.0/9f226d6034f4b30f7f05e1d44093729ee0a08767/rest-api-sdk-1.14.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/mavenRepository/caches/modules-2/files-2.1/com.paypal.sdk/rest-api-sdk/1.14.0/a883d1b381dcc1554f18b0643747924ec6874b8d/rest-api-sdk-1.14.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/mavenRepository/caches/modules-2/files-2.1/com.paypal.sdk/rest-api-sdk/1.14.0/716ed63fba3ca1a1d948a94fa2665c6e7c1554c9/rest-api-sdk-1.14.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
